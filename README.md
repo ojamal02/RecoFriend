@@ -23,3 +23,7 @@ Things you may want to cover:
 
 * ...
 # RecoFriend
+
+![Build Status](https://codeship.com/projects/bf241d00-1177-0135-f939-466af79fdcc4/status?branch=master)
+![Code Climate](https://codeclimate.com/github/ojamal02/RecoFriend.png)
+![Coverage Status](https://coveralls.io/repos/ojamal02/RecoFriend/badge.png)
