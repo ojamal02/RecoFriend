@@ -1,0 +1,90 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/admin/challenges/RecoFriend/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/models/user.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/admin/challenges/RecoFriend/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/admin/challenges/RecoFriend/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/admin/challenges/RecoFriend/app/controllers/sessions_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/admin/challenges/RecoFriend/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/admin/challenges/RecoFriend/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1493757121
+  }
+}
