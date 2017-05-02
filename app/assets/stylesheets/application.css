@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  background-color: cyan;
+  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+  color: red;
+}
