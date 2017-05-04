@@ -1,0 +1,11 @@
+<h1> Index List </h1>
+
+<div class="sidebox">
+    <% @lists.each do |list| %>
+      <p><%=link_to list.title, list_path(list)%>
+        <%="-"%>
+        <%=list.user.name %></p>
+  <% end %>
+</div>
+
+<p><%=link_to "Back to home", root_path %></p>
