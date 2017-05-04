@@ -24,7 +24,7 @@ h1 {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url('http://i.imgur.com/g4QRmBk.jpg');
+  background-image: url('http://i.imgur.com/SAAVbIR.jpg');
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,7 +49,7 @@ body {
 
 a:hover {
   color: magenta;
-  cursor: url('http://i.imgur.com/QRsP1oH.png'), auto;
+  cursor: url('http://i.imgur.com/20VQUMR.png'), auto;
 }
 
 a {

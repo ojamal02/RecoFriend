@@ -4973,3 +4973,196 @@ Processing by HomeController#show as HTML
 Completed 200 OK in 145ms (Views: 141.4ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2017-05-04 12:11:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3022ms (ActiveRecord: 16.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___24551612896356311_70128441199540'
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (192.2ms)
+Started GET "/" for ::1 at 2017-05-04 12:11:34 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/application_controller.rb:6:in `current_user'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___24551612896356311_70128463384780'
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (142.7ms)
+Started GET "/" for ::1 at 2017-05-04 12:15:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /Users/admin/challenges/RecoFriend/app/controllers/application_controller.rb:10)
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 10.4ms)
+
+
+  
+NameError (undefined local variable or method `login_path' for #<HomeController:0x007fe076184120>):
+  
+app/controllers/application_controller.rb:13:in `require_user'
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/admin/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (301.9ms)
+Started GET "/" for ::1 at 2017-05-04 12:15:52 -0400
+Started GET "/" for ::1 at 2017-05-04 12:16:02 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1586ms (Views: 1581.9ms | ActiveRecord: 0.7ms)
+
+
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 116ms (Views: 109.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:05 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 193ms (Views: 186.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2017-05-04 12:16:07 -0400
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBjSXk6uj5iF0ldtfBeqyrnqtiPGyDo2nC0dlMSxHVTPSV58xF_0Mr1fEZy6V0ADBYtyLZJ7SPxM83lF2DR4_eu-juQYRHSqcFHrjh8C21HhQq4fJQk9yx28gLld4neyHvKfnPnQfHhry1y3vs5pPoo2OAqsOUNm_HjYDV59Ik4MBmklrhiedKokBWc6rFR3WGKGzfX67zXqCoAIdqFYfYxTQy9G7hQUJMOz1MxkYpCaCk-CZukNFPBH63XZM2d7tckecQ2zAvwMWLcEkXxr6ajJT0K5bqUgC2Hv02R_sB3NVqGkw8tCvV3j1Jn7mWTGGM&state=10bee1034b721f5ed1c1d6927a740dd851fd8c6beb8f9a7d" for ::1 at 2017-05-04 12:16:08 -0400
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBjSXk6uj5iF0ldtfBeqyrnqtiPGyDo2nC0dlMSxHVTPSV58xF_0Mr1fEZy6V0ADBYtyLZJ7SPxM83lF2DR4_eu-juQYRHSqcFHrjh8C21HhQq4fJQk9yx28gLld4neyHvKfnPnQfHhry1y3vs5pPoo2OAqsOUNm_HjYDV59Ik4MBmklrhiedKokBWc6rFR3WGKGzfX67zXqCoAIdqFYfYxTQy9G7hQUJMOz1MxkYpCaCk-CZukNFPBH63XZM2d7tckecQ2zAvwMWLcEkXxr6ajJT0K5bqUgC2Hv02R_sB3NVqGkw8tCvV3j1Jn7mWTGGM", "state"=>"10bee1034b721f5ed1c1d6927a740dd851fd8c6beb8f9a7d", "provider"=>"facebook"}
+DEPRECATION WARNING: env is deprecated and will be removed from Rails 5.1 (called from create at /Users/admin/challenges/RecoFriend/app/controllers/sessions_controller.rb:3)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "facebook"], ["uid", "10158660357205302"], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.1ms)[0m  [1m[32mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["provider", "facebook"], ["uid", "10158660357205302"], ["name", "Omar Jamal"], ["oauth_token", "EAAXuZA4KUYEoBAH7bUXNhQTbm3kUdTXF5rT3JWfV3QRGihpvu9UKs3UHiewYAcYw751FGF9Cz48RIyInIfo7zr6G7QRf80OBgGhL6ajuyg7HsgYvwAygB852qPDfaIZASDL5C08LUl5yy7Bm7w1uyL4iaLUCYZD"], ["oauth_expires_at", 2017-07-02 19:02:46 UTC], ["created_at", 2017-05-04 16:16:08 UTC], ["updated_at", 2017-05-04 16:16:08 UTC]]
+  [1m[35m (23.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 54.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:08 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/signout" for ::1 at 2017-05-04 12:16:10 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:10 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:10 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:13 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:13 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:14 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:54 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 145ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:16:55 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2017-05-04 12:17:05 -0400
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQBiX8yVC8djF2gVPhdWGdj5y0oU77vXHglQxNcxqJE9OWw-VFGyadF1mknZHVebbdq59on577h5pn335_PtbLkVVS-di6REf39Ag0Vkw56L0Lvi3SbbSoOHFcnanUe9EmcGrtV-9AJC08A1d438hyA_nNS8W_DA_RErcLfBnnk79ob3pPWhQUZRqTYelptK_mH1HdjXnyMjm8W1aLNnk2oKEQjDe40XXoY3m8wbUGa7qA6baJ2EG-ZFCFDuVqCf21q2e0a6IWaytkpVtb9d5H7dZ-ZHV1Qb784ezhgiEzV7mM8k9Rqw9nSsw3JUA1QPzxE&state=abba646db6f16a2f3f7805699864a6ebf554d5c523427eff" for ::1 at 2017-05-04 12:17:05 -0400
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBiX8yVC8djF2gVPhdWGdj5y0oU77vXHglQxNcxqJE9OWw-VFGyadF1mknZHVebbdq59on577h5pn335_PtbLkVVS-di6REf39Ag0Vkw56L0Lvi3SbbSoOHFcnanUe9EmcGrtV-9AJC08A1d438hyA_nNS8W_DA_RErcLfBnnk79ob3pPWhQUZRqTYelptK_mH1HdjXnyMjm8W1aLNnk2oKEQjDe40XXoY3m8wbUGa7qA6baJ2EG-ZFCFDuVqCf21q2e0a6IWaytkpVtb9d5H7dZ-ZHV1Qb784ezhgiEzV7mM8k9Rqw9nSsw3JUA1QPzxE", "state"=>"abba646db6f16a2f3f7805699864a6ebf554d5c523427eff", "provider"=>"facebook"}
+DEPRECATION WARNING: env is deprecated and will be removed from Rails 5.1 (called from create at /Users/admin/challenges/RecoFriend/app/controllers/sessions_controller.rb:3)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "facebook"], ["uid", "10158660357205302"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:17:05 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-04 12:17:26 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 1.0ms)
+
+
