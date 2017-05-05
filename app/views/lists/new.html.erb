@@ -1,0 +1,20 @@
+
+<div class="mainbox">
+  <%= form_for @list do |f|%>
+
+<div>
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+</div>
+
+<div>
+  <%= f.label :body, "Body" %>
+  <%= f.text_field :body %>
+</div>
+
+<div>
+  <%= f.submit "Add List"%>
+</div>
+  <% end %>
+</div>
+<p><%=link_to "Back to home", root_path %></p>
