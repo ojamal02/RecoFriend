@@ -1,0 +1,21 @@
+<div class="mainbox">
+  <%= form_for [@list, @suggestion] do |f|%>
+
+<div>
+  <%= f.label :show_name, "Name of Show" %>
+  <%= f.text_field :show_name %>
+</div>
+
+<div>
+  <%= f.label :description, "Description" %>
+  <%= f.text_field :description %>
+</div>
+
+<div>
+  <%= f.submit "Add Suggestion"%>
+</div>
+
+  <% end %>
+</div>
+
+<p><%=link_to "Back to list", list_path(@list) %></p>

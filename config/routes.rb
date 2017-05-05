@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
      root "home#show"
 
-     resources :lists
+     resources :lists do
+      resources :suggestions, only: [:index, :create, :new]
+    end
+
+    resource :suggestion, only: [:show]
+    end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end
