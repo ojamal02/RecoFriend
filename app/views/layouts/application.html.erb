@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
+
+<ul class="slideshow">
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+</ul>
+  <div class="container">
+    <header>
+      <h1><span>RecoFriend</span></h1>
+  </header>
+</div>
+
   <head>
     <title>RecoFriend</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-  </head>
+    <div class="mainbox">
+      <% if current_user %>
+        Signed in as <strong><%= current_user.name %></strong>!
+          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+      <% else %>
+          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+      <% end %>
+    </div>
+
+</head>
   <body>
-    <div>
-  <% if current_user %>
-    Signed in as <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-  <% end %>
-</div>
+
     <%= yield %>
+
   </body>
 </html>
