@@ -30,7 +30,8 @@ body {
   color: skyblue;
   font-weight: bolder;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+  overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .mainbox {
@@ -82,13 +83,17 @@ a {
   font-weight: bold;
 }
 
+html { min-height: 100%; }
+
+body { height: 100%; }
 
 .ie7 body{
 	overflow:hidden;
 }
 a{
-	color: #333;
+	color: skyblue;
 	text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 .container{
 	position: relative;
@@ -181,7 +186,7 @@ a{
 }
 .slideshow li:nth-child(1) span { background-image: url(http://i.imgur.com/SAAVbIR.jpg) }
 .slideshow li:nth-child(2) span {
-    background-image: url(http://i.imgur.com/KiRDOB1.jpg);
+    background-image: url(http://i.imgur.com/7De8GKK.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -189,7 +194,7 @@ a{
     animation-delay: 6s;
 }
 .slideshow li:nth-child(3) span {
-    background-image: url(http://i.imgur.com/7De8GKK.jpg);
+    background-image: url(http://i.imgur.com/YfVAtot.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -197,7 +202,7 @@ a{
     animation-delay: 12s;
 }
 .slideshow li:nth-child(4) span {
-    background-image: url(http://i.imgur.com/YfVAtot.jpg);
+    background-image: url(http://i.imgur.com/JxFcnvW.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -213,7 +218,7 @@ a{
     animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-    background-image: url(http://31.media.tumblr.com/67d222ee577fc35faca83f0e08efc48e/tumblr_mzzqt7wyEU1st5lhmo1_1280.jpg);
+    background-image: url(http://i.imgur.com/XyYkXfT.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -507,4 +512,22 @@ q:before,q:after {
 	content:'';
 }
 abbr,acronym { border:0;
+}
+
+header {
+  background-color: floralwhite;
+  color: skyblue;
+  opacity: 0.7;
+  padding-bottom: 2px;
+  border-bottom: 2px solid lightgrey;
+
+}
+
+.titlecard {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color: skyblue;
+  font-weight: bolder;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: 300%;
 }

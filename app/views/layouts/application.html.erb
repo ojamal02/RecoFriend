@@ -9,18 +9,13 @@
   <li><span></span></li>
   <li><span></span></li>
 </ul>
-  <div class="container">
-    <header>
-      <h1><span>RecoFriend</span></h1>
-  </header>
-</div>
-
   <head>
     <title>RecoFriend</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <div class="mainbox">
+    <header>
+    <div>
       <% if current_user %>
         Signed in as <strong><%= current_user.name %></strong>!
           <%= link_to "Sign out", signout_path, id: "sign_out" %>
@@ -28,9 +23,16 @@
           <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
       <% end %>
     </div>
-
+  </header>
 </head>
   <body>
+
+    <div class="container">
+
+        <h1 class="titlecard"><span>RecoFriend</span></h1>
+
+    </div>
+
 
     <%= yield %>
 
