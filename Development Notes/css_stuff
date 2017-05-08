@@ -1,0 +1,8 @@
+background-image: url('http://i.imgur.com/SAAVbIR.jpg');
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: vh;
+  width: vw;
+  background-repeat: no-repeat;
