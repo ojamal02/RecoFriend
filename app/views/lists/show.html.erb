@@ -17,7 +17,9 @@
       <% end %>
     <% end %>
 
-
-<p><%=link_to "Add a Suggestion", new_list_suggestion_path(@list)%></p>
-<p><%=link_to "Back to Home", root_path %></p>
-<p><%=link_to "Lists Index", lists_path(@lists)%></p>
+<div class="mainbox">
+  <p><%=link_to "Add a Suggestion", new_list_suggestion_path(@list)%></p>
+  <p><%=link_to "Back to Home", root_path %></p>
+  <p><%=link_to "Lists Index", lists_path(@lists)%></p>
+  <p>Share to  <%= render_shareable :static_link => true , :buttons=> ['twitter', 'facebook', 'reddit'] %></p>
+</div>
