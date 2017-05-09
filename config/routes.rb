@@ -11,7 +11,7 @@ Rails.application.routes.draw do
      root "home#show"
 
      resources :lists do
-      resources :suggestions, only: [:index, :create, :new]
+      resources :suggestions, only: [:index, :create, :new, :destroy]
     end
 
     resource :suggestion, only: [:show]

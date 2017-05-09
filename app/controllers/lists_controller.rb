@@ -48,6 +48,7 @@ class ListsController < ApplicationController
 
   def destroy
       @list = List.find(params[:id])
+      @list.suggestions.destroy_all
       @list.destroy
       flash[:success] = "list deleted"
       redirect_to root_path

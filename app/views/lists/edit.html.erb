@@ -1,0 +1,39 @@
+<div class="container">
+    <h1 class="titlecard"><span>Edit RecoFriend List</span></h1>
+</div>
+
+<br></br>
+
+  <div class="row">
+    <div class="large-2 columns"></div>
+    <div class="large-8 large-centered columns">
+      <div class="mainbox3">
+        <%= form_for @list do |f|%>
+
+      <div class="row">
+        <div class="large-2 columns"></div>
+        <div class="large-8 large-centered columns">
+            <%= f.label :title, "Title" %>
+            <%= f.text_field :title %>
+        <div class="large-2 columns"></div>
+      </div>
+
+      <div class="row">
+        <div class="large-2 columns"></div>
+        <div class="large-8 large-centered columns">
+            <%= f.label :body, "Body" %>
+            <%= f.text_field :body %>
+        <div class="large-2 columns"></div>
+      </div>
+
+      <br>
+
+      <div>
+        <%= f.submit %>
+      </div>
+
+        <% end %>
+      </div>
+    </div>
+  <div class="large-2 columns"></div>
+</div>
