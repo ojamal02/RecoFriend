@@ -1,21 +1,52 @@
-<div class="mainbox">
-  <%= form_for [@list, @suggestion] do |f|%>
-
-<div>
-  <%= f.label :show_name, "Name of Show" %>
-  <%= f.text_field :show_name %>
+<div class="container">
+    <h1 class="titlecard"><span>New RecoFriend Suggestion</span></h1>
 </div>
 
-<div>
-  <%= f.label :description, "Description" %>
-  <%= f.text_field :description %>
-</div>
+<br></br>
 
-<div>
-  <%= f.submit "Add Suggestion"%>
-</div>
 
-  <% end %>
-</div>
+<div class="row">
+  <div class="large-2 columns"></div>
+  <div class="large-8 large-centered columns">
 
-<p><%=link_to "Back to list", list_path(@list) %></p>
+    <div class="mainbox3">
+      <%= form_for [@list, @suggestion] do |f|%>
+
+      <div class="row">
+        <div class="large-2 columns"></div>
+        <div class="large-8 large-centered columns">
+          <div>
+            <%= f.label :show_name, "Name of Show" %>
+            <%= f.text_field :show_name %>
+          </div>
+          <div class="large-2 columns"></div>
+        </div>
+
+      <div class="row">
+        <div class="large-2 columns"></div>
+        <div class="large-8 large-centered columns">
+          <div>
+            <%= f.label :description, "Description" %>
+            <%= f.text_field :description %>
+          </div>
+          <div class="large-2 columns"></div>
+        </div>
+
+        <br>
+
+          <div>
+            <%= f.submit %>
+          </div>
+
+          <br>
+          
+          <div>
+            <%= link_to "Back to List", list_path(@list)%>
+          </div>
+
+
+          <% end %>
+        </div>
+      </div>
+      <div class="large-2 columns"></div>
+</div>

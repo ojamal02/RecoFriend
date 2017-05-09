@@ -28,6 +28,9 @@ def index
    end
  end
 
+
+
+
  private
 
  def suggestion_params
