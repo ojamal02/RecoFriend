@@ -1,25 +1,60 @@
-<h1> This must be the Place <h1>
+<div class="container">
+    <h1 class="titlecard"><span><%=@list.title%></span></h1>
+</div>
 
-  <div class="mainbox">
-   <h3 class="name_tag"><%= @list.user.name %></h3>
-   <h6><%=@list.title%></h6>
-   <h6><%=@list.body%></h6>
+<br></br>
+
+<div class="row">
+  <div class="large-2 columns"></div>
+  <div class="large-8 large-centered columns">
+    <div class="mainbox">
+     <h3 class="name_tag"><%= @list.user.name %></h3>
+     <h6 class="titlehead"><%=@list.title%></h6>
+     <h6><%=@list.body%></h6>
+    </div>
   </div>
+  <div class="large-2 columns"></div>
+</div>
 
+<br></br>
 
+<div class="row">
+  <div class="large-3 columns"></div>
+  <div class="large-6 large-centered columns">
     <% unless @list.suggestions.empty? %>
       <% @list.suggestions.each do |suggestion| %>
       <div class="mainbox2">
         <h3 class="name_tag"><%= suggestion.user.name %></h3>
-        <h6><%= suggestion.show_name %></h6>
+        <h6 class="titlehead"><%= suggestion.show_name %></h6>
         <h6><%= suggestion.description %></h6>
-      </div>
+      </div><br>
       <% end %>
     <% end %>
+  </div>
+  <div class="large-3 columns"></div>
+</div>
 
-<div class="mainbox">
-  <p><%=link_to "Add a Suggestion", new_list_suggestion_path(@list)%></p>
-  <p><%=link_to "Back to Home", root_path %></p>
-  <p><%=link_to "Lists Index", lists_path(@lists)%></p>
-  <p>Share to  <%= render_shareable :static_link => true , :buttons=> ['twitter', 'facebook', 'reddit'] %></p>
+<br></br>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+
+
+<div class="row">
+  <div class="large-4 columns"></div>
+  <div class="large-4 large-centered columns">
+    <div class="mainbox">
+      <p><%=link_to "Add a Suggestion", new_list_suggestion_path(@list)%></p>
+      <p>Share to  <%= render_shareable :static_link => true , :buttons=> ['twitter','reddit'] %></p>
+    </div>
+  </div>
+  <div class="large-4 columns"></div>
 </div>

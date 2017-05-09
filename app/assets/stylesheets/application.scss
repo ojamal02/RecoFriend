@@ -35,7 +35,7 @@ body {
 }
 
 .mainbox {
-  background-color: white;
+  background: linear-gradient(to bottom, white 0%, floralwhite 100%);
   border-style: solid;
   border-width: 3px;
   border-color: lightgrey;
@@ -61,7 +61,7 @@ a {
 }
 
 .mainbox2 {
-  background-color: oldlace;
+  background: linear-gradient(to bottom, white 0%, cornsilk 100%);
   border-style: solid;
   border-width: 3px;
   border-color: lightgrey;
@@ -530,4 +530,39 @@ header {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
   font-size: 300%;
+}
+
+.titlecard2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: plum;
+  font-weight: normal;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: 300%;
+}
+
+.mainbox3{
+  background: linear-gradient(to bottom, #ffffcc 0%, #ffffff 100%);
+  border-style: solid;
+  border-width: 3px;
+  border-color: lightgrey;
+  color: skyblue;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-align: center;
+  opacity: 0.85;
+  border-radius: 7.5px;
+  text-align: center;
+  padding-bottom: 7.5px;
+}
+
+.titlehead {
+  font-weight: bold;
+}
+
+.titlecard2 {
+  font-weight: bold;
+}
+
+.rounder {
+  border-radius: 7.5px;
 }

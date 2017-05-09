@@ -1,11 +1,11 @@
+<div class="container">
+    <h1 class="titlecard"><span>RecoFriend</span></h1>
+</div>
 
-      <div class="mainbox">
-        <p> This is what a box looks like </p>
-        <a href class="button"> This is a button </a>
-      </div>
-
-
-<div class="mainbox2"
-<p><%=link_to "Hit this link", lists_path(@lists) %></p>
-<p><%=link_to "New Links", new_list_path%></p>
+<div class="container">
+  <%if current_user.present? %>
+    <h1 class="titlecard"><span>Hello <%= current_user.name %></span></h1>
+  <% else %>
+    <h1 class="titlecard2"><span> When it comes to TV be a Friend and Recommend!</span><h1>
+  <%end%>
 </div>
