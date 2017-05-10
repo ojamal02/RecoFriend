@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1 class="titlecard"><span>You asked for it so you got it!</span></h1>
+
+</div>
+
+<% if @blank_message %>
+  <h3><%=@blank_message %></h3>
+<% end %>
+
+<% if @lists %>
+  <div class="row">
+    <div class="large-8 large-centered columns">
+      <ul class="mainbox">
+        <% @lists.each do |list| %>
+        <li><%= link_to list.title, list_path(list) %> - <%= list.user.name %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
