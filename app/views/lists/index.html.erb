@@ -7,15 +7,19 @@
 <br></br>
 
 <div class="row">
-  <div class="large-2 columns"></div>
+
   <div class="large-8 large-centered columns">
-    <div class="mainbox">
-        <% @lists.each do |list| %>
-          <p><%=link_to list.title, list_path(list)%>
-          <%="-"%>
-          <%=list.user.name %></p>
-        <% end %>
+      <div id="app">
+
+      <div class="hidden">
+        <ul>
+          <% @lists.each do |list| %>
+            <li><%= link_to list.title, list_path(list) %> "-" <%= list.user.name %></li>
+          <% end %>
+        </ul>
       </div>
-    <div class="large-2 columns"></div>
+      </div>
+    </div>
+
   </div>
 </div>
