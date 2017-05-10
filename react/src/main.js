@@ -1,10 +1,13 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './containers/App';
 
 $(function() {
-  ReactDOM.render(
-    <h1>RecoFriend</h1>,
-    document.getElementById('app')
-  );
-});
+  let appElement = document.getElementById('app')
+  if (appElement) {
+    ReactDOM.render(
+    <App />,
+    appElement
+  )}
+})
