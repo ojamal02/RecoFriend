@@ -24,16 +24,22 @@
               <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
           <% end %>
         </div>
-        <div class="large-3 large-center columns">
-          <p><%=link_to "See the newest RecoFriend Lists!", lists_path(@lists) %></p>
+        <div class="large-2 columns">
+          <p><%=link_to "RecoFriend Index List", lists_path(@lists) %></p>
         </div>
-        <div class="large-3 columns">
+        <div class="large-2 columns">
             <p><%=link_to "Make a New List!", new_list_path%></p>
         </div>
-        <div class="large-3 columns">
-          <p><%=link_to "Home", root_path %></p>
+        <div class="large-2 columns">
+          <p><%=link_to "Home Page", root_path %></p>
+        </div>
+        <div class="large-2 columns">
+          <%= form_tag(searches_path, :method => "get", id: "search-form") do %>
+            <%=text_field_tag :search, params[:search], placeholder: "Search Lists", class: "search" %>
+            <%= submit_tag "Search", class: "hidden" %>
         </div>
       </div>
+<% end %>
   </header>
 </head>
   <body>

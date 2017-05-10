@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
      root "home#show"
 
+     resources :searches, only: [:index]
+
      resources :lists do
       resources :suggestions, only: [:index, :create, :new, :destroy]
     end
