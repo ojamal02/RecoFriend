@@ -4,11 +4,15 @@
 
 </div>
 
+<br>
+
 <% if @blank_message %>
-  <h3><%=@blank_message %></h3>
+  <div class="container">
+    <h3 class="titlecard"><span>  <%=@blank_message %></span></h3>
+  </div>
 <% end %>
 
-<% if @lists %>
+<% if !@lists.empty? %>
   <div class="row">
     <div class="large-8 large-centered columns">
       <ul class="mainbox">
