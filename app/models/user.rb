@@ -9,4 +9,7 @@ class User < ApplicationRecord
      user.save!
    end
  end
+
+ has_many :lists
+ has_many :suggestions
 end
