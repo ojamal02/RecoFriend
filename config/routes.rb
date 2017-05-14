@@ -18,6 +18,13 @@ Rails.application.routes.draw do
 
     resource :suggestion, only: [:show]
 
+        get 'shows/index', to: 'shows#index'
+
+        get 'search', to: 'shows#searchAPI'
+
+        post 'shows/index', to: 'shows#searchAPI'
+
+        post 'search', to: 'shows#searchAPI'
 
     namespace :api do
       namespace :v1 do

@@ -5,14 +5,14 @@
 <div class="container">
   <%if current_user.present? %>
     <h1 class="titlecard"><span>Hello <%= current_user.name %></span></h1>
-    <p>My List Submissions</p>
     <div class="row">
       <div class="large-8 large-centered columns">
         <div class = "mainbox">
+          <p>My RecoFriend Submissions</p>
       <% current_user.lists.each do |list| %>
       <h1><%= link_to list.title, list_path(list) %></h1>
-      <p><%= link_to "Delete This List", list, method: :delete, data: {confirm: "Are you sure you want to delete this list?"}, class: "delete"%></p>
-      <p><%= link_to "Edit This List Submission ", edit_list_path(list)%></p>
+      <p><%= link_to "Delete This Query", list, method: :delete, data: {confirm: "Are you sure you want to delete this query?"}, class: "delete"%></p>
+      <p><%= link_to "Edit This Query Submission ", edit_list_path(list)%></p>
         <hr/>
       <% end %>
     </div>

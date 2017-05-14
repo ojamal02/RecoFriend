@@ -14,8 +14,8 @@
      <div>
        <% if current_user.present? %>
          <% if current_user == @list.user%>
-           <p><%= link_to "Delete This List", @list, method: :delete, data: {confirm: "Are you sure you want to delete this list?"}, class: "delete"%></p>
-           <p><%= link_to "Edit This List Submission ", edit_list_path(@list)%></p>
+           <p><%= link_to "Delete This Query", @list, method: :delete, data: {confirm: "Are you sure you want to delete this query?"}, class: "delete"%></p>
+           <p><%= link_to "Edit This Query Submission ", edit_list_path(@list)%></p>
          <%end%>
        <% end %>
      </div>
