@@ -6,3 +6,5 @@
 
 RecoFriend is a site that allows users to gather suggestions they might be interested in and then add them to a to watch list. 
 I built this project primarily in Rails with some React based front end features. User authentication is handled through the Facebook OmniAuth. Information for the to watch list is gathered from Guidebox via their API. 
+
+This is a work in progress, please check back for updates in the future. 
