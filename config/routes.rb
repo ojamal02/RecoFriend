@@ -19,6 +19,18 @@ Rails.application.routes.draw do
     resource :suggestion, only: [:show]
 
 
+
+    get 'shows/index', to: 'shows#index'
+
+    get 'search', to: 'shows#searchAPI'
+
+    post 'shows/index', to: 'shows#searchAPI'
+
+    post 'search', to: 'shows#searchAPI'
+
+
+    resource :show, only: [:show, :destroy]
+
     namespace :api do
       namespace :v1 do
         resources :lists
@@ -26,5 +38,3 @@ Rails.application.routes.draw do
   end
 
 end
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

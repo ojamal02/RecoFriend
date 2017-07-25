@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="titlecard"><span>To Watch List for <%= current_user.name %></span></h1>
+</div>
+
+<div class="row">
+  <div class="large-8 large-centered columns">
+    <div class="mainbox">
+      <% @shows.each do |show| %>
+        <p><%= show.title %></p>
+        <p><%= show.description %></p>
+        <p><%= link_to "Remove this Show", root_path%></p>
+        <hr>
+        <br>
+      <% end %>
+    </div>
+  </div>
+</div>
