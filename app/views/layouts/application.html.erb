@@ -25,17 +25,19 @@
           <% end %>
         </div>
         <div class="large-2 columns">
-          <p><%=link_to "RecoFriend Index List", lists_path(@lists) %></p>
+          <p><%=link_to "RecoFriend Index", lists_path(@lists) %></p>
+          <p><%=link_to "Your Shows", shows_show_path %></p>
         </div>
         <div class="large-2 columns">
-            <p><%=link_to "Make a New List!", new_list_path%></p>
+            <p><%=link_to "Make a New Post!", new_list_path%></p>
+            <p><%=link_to "Add a Show!", shows_index_path(@shows)%></p>
         </div>
         <div class="large-2 columns">
-          <p><%=link_to "Home Page", root_path %></p>
+          <p><%=link_to "Home", root_path %></p>
         </div>
         <div class="large-2 columns">
           <%= form_tag(searches_path, :method => "get", id: "search-form") do %>
-            <%=text_field_tag :search, params[:search], placeholder: "Search Lists", class: "search" %>
+            <%=text_field_tag :search, params[:search], placeholder: "Search Queries", class: "search" %>
             <%= submit_tag "Search", class: "hidden" %>
         </div>
       </div>
